@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TK'Shop</h1>
+{% for obj in object_list %}
+    <a href="{% url 'product:productdetail' obj.pk %}">{{obj.name}}</a>
+{% endfor %}
+
+</body>
+</html>
